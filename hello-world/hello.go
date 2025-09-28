@@ -2,9 +2,12 @@ package main
 
 import "fmt"
 
-// This means this function returns a string.
+
+const englishHelloPrefix = "Hello, "
+
+// This means this function accept a string and returns a string.
 func Hello(name string) string {
-	return "Hello, " + name
+	return englishHelloPrefix + name
 }
 
 func main() {
