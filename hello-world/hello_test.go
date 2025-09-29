@@ -5,7 +5,7 @@ import "testing"
 // t of type *testing.T is our "hook" into the testing framework
 func TestHello(t *testing.T) {
 	// Declaring variables
-got := Hello("Chris")
+	got := Hello("Chris")
 	want := "Hello, Chris"
 
 	// Calling the Errorf method on our t, which will print 
