@@ -2,23 +2,26 @@ package main
 
 import "fmt"
 
-const spanish = "Spanish"
-const french = "French"	
-const swedish = "Swedish"
-const englishHelloPrefix = "Hello, "
-const spanishHelloPrefix = "Hola, "
-const frenchHelloPrefix = "Bonjour, "
-const swedishHelloPrefix = "Hej, "
+const (
+	spanish = "Spanish"
+	french = "French"	
+	swedish = "Swedish"
+ 	englishHelloPrefix = "Hello, "
+ 	spanishHelloPrefix = "Hola, "
+ 	frenchHelloPrefix = "Bonjour, "
+ 	swedishHelloPrefix = "Hej, "
+)
 
-// This means this function accept a string and returns a string.
 func Hello(name string, language string) string {
 
 	if name == "" {
 		name = "World"
 	}
 
-	prefix := englishHelloPrefix
+	return greetingPrefix(language) + name
+}
 
+func greetingPrefix(language string) (prefix string)  {
 	switch language {
 	case spanish:
 		prefix = spanishHelloPrefix
@@ -26,9 +29,10 @@ func Hello(name string, language string) string {
 		prefix = frenchHelloPrefix
 	case swedish:
 		prefix = swedishHelloPrefix
+	default:
+		prefix = englishHelloPrefix
 	}
-
-	return prefix + name	
+	return
 }
 
 func main() {
