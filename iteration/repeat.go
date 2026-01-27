@@ -8,3 +8,4 @@ func Repeat(character string, count int) string {
 	return result
 }
 
+
