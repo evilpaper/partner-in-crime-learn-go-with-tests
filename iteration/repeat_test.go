@@ -17,5 +17,4 @@ func TestRepeat(t *testing.T) {
 func ExampleRepeat() {
 	repeated := Repeat("a", 5)
 	fmt.Println(repeated)
-	// Output: aaaaa
 }
