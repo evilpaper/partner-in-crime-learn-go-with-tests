@@ -6,7 +6,7 @@ type Rectangle struct {
 }
 
 func (r Rectangle) Area() float64 {
-	return 0
+	return r.width * r.height
 }
 
 type Circle struct {
