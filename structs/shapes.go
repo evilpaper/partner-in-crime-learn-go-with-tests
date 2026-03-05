@@ -7,6 +7,7 @@ type Rectangle struct {
 	Height float64
 }
 
+// Area() is a method on the type Rectangle
 func (r Rectangle) Area() float64 {
 	return r.Width * r.Height
 }
@@ -28,10 +29,7 @@ func (t Triangle) Area() float64 {
 	return (t.Base * t.Height) * 0.5
 }
 
+// TestPerimeter calls the function Perimeter. Straightforward. No method needed.
 func Perimeter(rectangle Rectangle) float64 {
 	return 2 * (rectangle.Width + rectangle.Height)
-}
-
-func Area(rectangle Rectangle) float64 {
-	return rectangle.Width * rectangle.Height
 }
