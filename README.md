@@ -14,11 +14,11 @@ Each folder is a chapter. Each chapte teach a part of Go. Each has tests. You ru
 
 To run the tests:
 
-1. Open the project in your IDE of choice.
+1. Open the project in your IDE.
 
 1. Stand in the root of the project.
 
 1. Type the following in the terminal: `go test ./<chapter>`
    Replace `<chapter>` with the name of the chapter you want to run, for example: `go test ./hello-world`
 
-1. What the output of the test in your terminal.
+1. Watch the output of the test in your terminal. Pray to god it pass. Review and fix otherwise.
