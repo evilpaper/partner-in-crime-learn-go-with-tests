@@ -16,6 +16,13 @@ type Wallet struct {
 	balance Bitcoin
 }
 
+// WTF is this?
+// We define a method on Bitcoin.
+// func → define a function
+// (b Bitcoin) → this function belongs to the Bitcoin type. b is the receiver (like this in Java/C#).
+// String() → method name
+// string → return type
+// Why doing this? Well, to print "10 BTC" instead of "10".
 func (b Bitcoin) String() string {
 	return fmt.Sprintf("%d BTC", b)
 }
